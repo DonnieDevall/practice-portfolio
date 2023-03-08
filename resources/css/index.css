@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ background: rgb(182, 182, 182);
+ color: black;
+ -webkit-font-smoothing: antialiased;
+ display: grid;
+ gap: 10px;
+ grid-template-columns: 1.5fr 12fr .5fr;
+ width: 80%;
+ margin: auto;
+ padding-top: 70px;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: 'Roboto', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Grid Body Managers */
+
+.grid-child {
+    background-color: lightgray;
+    border: 1px solid rgb(92, 92, 92);
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.grid-header img {
+    width: 200px;
+    border-radius: 60px;
+}
+
+.grid-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.grid-footer {
+    grid-column: 1 / span 3;
+    justify-content: center;
+}
+
+/* Skill Set */
+
+.skill-set {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    height: 100%;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.skill-list {
+    list-style: none;
+    display: flex;
+    grid-column-start: auto;
+    background-color: rgb(231, 231, 231);
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-self: end;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill-list li {
+    margin: auto 5px;
+}
+
+.skill-list i {
+    font-size: 2.5rem;
+}
+
+/* Nav Bar */
+.grid-nav {
+    justify-content: center;
+}
+
+.grid-nav ul {
+    list-style-type: none;
+}
+
+.grid-nav i {
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Buttons */
+
+.fa-html5 {
+    color: rgb(255, 81, 0)
+}
+
+.fa-css3-alt {
+    color: blue
+}
+
+/* Contact Main Text */
+
+#contact-list {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#contact-list li {
+    margin-top: 5px;
+}
+
+#project-list {
+    list-style-type: square;
+    font-size: 1rem;
+    margin-top: 20px;
+}

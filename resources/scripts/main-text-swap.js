@@ -22,7 +22,7 @@ function contactText() {
     <ul id="contact-list">
         <li>Email: Donovandevall@gmail.com</li>
         <li>Phone: 813-838-5238</li>
-        <li>Based in Florida, USA</li>
+        <li>Located in Florida, USA</li>
     </ul>
     `
 }

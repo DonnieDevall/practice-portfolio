@@ -26,6 +26,56 @@ button {
     cursor: pointer;
 }
 
+@media (max-width: 425px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        width: 85%;
+    }
+
+    /* Nav Bar for mobile */
+
+    .grid-nav {
+        display: none !important;
+    }
+
+    .flex-nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+ 
+    .flex-nav li {
+        font-size: 1.5rem;
+    }
+
+    /* Projects for mobile */
+    #project-list {
+        list-style-type: none !important;
+        font-size: 1rem;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* About Me for mobile */
+    .about-me {
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    /* Contact Me for mobile */
+
+    #contact-list {
+        list-style-type: none;
+        font-size: 1.25rem !important;
+        margin-top: 20px;
+    }
+
+}
+
 /* Grid Body Managers */
 
 .grid-child {
@@ -130,6 +180,8 @@ button {
 #contact-list li {
     margin-top: 5px;
 }
+
+/* Project Main Text */
 
 #project-list {
     list-style-type: square;
